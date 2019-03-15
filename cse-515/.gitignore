@@ -1,0 +1,4 @@
+# Ignore the dataset file in project so it doesn't get commited.
+Project/Dataset/**
+.vscode/**
+.vscode/settings.json

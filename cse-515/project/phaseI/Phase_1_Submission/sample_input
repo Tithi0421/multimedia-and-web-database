@@ -1,0 +1,125 @@
+### SAMPLE INPUTS FOR ALL TASKS FOR PROJECT PHASE 1 ###
+
+### TASK 1 ###
+39052554@N00 TF 5
+
+	5 Nearest Neighbors:
+        	0. 9688281@N07; Distance = 28.69396774158583
+        	1. 81378932@N00; Distance = 33.60234535782673
+        	2. 83006240@N00; Distance = 30.00555452706638
+        	3. 8306673@N02; Distance = 31.201257345778554
+        	4. 93283041@N00; Distance = 28.317807718622518
+	Top 3 Features:
+	        0. tower
+	        1. bok
+	        2. garden
+
+
+56087830@N00 DF 8
+
+	8 Nearest Neighbors:
+		0. 27749836@N02; Distance = 152.3098193633966
+		1. 23072179@N00; Distance = 145.19237248925683
+		2. 54037354@N00; Distance = 145.58767443362117
+		3. 93858545@N00; Distance = 154.64356530052473
+		4. 57217704@N00; Distance = 154.51430344145717
+		5. 61577908@N00; Distance = 139.4068098883483
+		6. 25334641@N08; Distance = 156.52072319970398
+		7. 13597419@N00; Distance = 136.60278857617413
+	Top 3 Features:
+		0. view
+		1. tower
+		2. href
+
+56087830@N00 TF-IDF 5
+
+	5 Nearest Neighbors:
+		0. 9688281@N07; Distance = 4.5826015466334376
+		1. 27749836@N02; Distance = 4.59077479554625
+		2. 46814076@N00; Distance = 4.58659306868973
+		3. 41622091@N00; Distance = 4.5880177611232416
+		4. 78428880@N00; Distance = 4.580571906387122
+	Top 3 Features:
+		0. tower
+		1. room
+		2. statue
+
+### TASK 2 ###
+
+4459178306 TF 10
+
+	10 Nearest Neighbors:
+		0. 4459178306; Distance = 0.0
+		1. 4459177806; Distance = 0.0
+		2. 4459175892; Distance = 0.0
+		3. 4458397675; Distance = 0.0
+		4. 4458397751; Distance = 0.0
+		5. 4459176836; Distance = 0.0
+		6. 4459180662; Distance = 0.0
+		7. 4458401155; Distance = 0.0
+		8. 4459177390; Distance = 0.0
+	Top 3 Features:
+		0. agra
+		1. fort
+		2. mughal
+
+288051306 DF 5
+
+288051306 TF-IDF 5
+
+### TASK 3 ###
+
+27 TF 5
+
+	5 Nearest Neighbors:
+		0. 20; Distance = 554.8745987274291
+		1. 21; Distance = 535.166071831316
+		2. 22; Distance = 565.3537628418991
+		3. 29; Distance = 556.2745008607977
+		4. 30; Distance = 565.8933256324812
+	Top 3 Features:
+		0. de
+		1. quot
+		2. href
+
+6 DF 5
+
+	5 Nearest Neighbors:
+		0. 3; Distance = 85.49209370253169
+		1. 12; Distance = 81.74529333506186
+		2. 15; Distance = 86.7042407752071
+		3. 22; Distance = 86.14115093305409
+		4. 25; Distance = 87.56648008971202
+	Top 3 Features:
+		0. photo
+		1. nofollow
+		2. view
+
+6 TF-IDF 7
+
+	7 Nearest Neighbors:
+		0. 11; Distance = 250.40005793474256
+		1. 12; Distance = 209.32473287601306
+		2. 18; Distance = 197.66786518897374
+		3. 19; Distance = 233.10197452924683
+		4. 20; Distance = 204.17465224267875
+		5. 21; Distance = 235.5139058308621
+		6. 30; Distance = 200.213097833917
+	Top 3 Features:
+		0. berlin
+		1. neuesmuseum
+		2. museum
+
+### TASK 4 ###
+
+10 CN3x3 7
+
+18 GLRLM 5
+
+30 LBP3x3 5
+
+### TASK 5 ###
+
+4 5
+
+###############

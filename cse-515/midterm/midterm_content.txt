@@ -1,0 +1,83 @@
+Dear all,
+
+So far we covered, the following:
+
+-What is mutimedia?
+    -Semantic Heterogeneity, fuziness, subjectivity, ranked processing, etc.
+
+-Abstract models (Set, vector, sequence, tree, graph)
+
+-Vector Spaces
+
+-Similarity/Distance
+    -Euclidean Distance
+    -KNN
+    -Range Search
+    -Metric Distance (Minkowski Metric)
+    -Mahalonobis Distance
+    -Covariance Matrix
+    -Quadratic Distance
+    -Intersection Similarity
+    -Angle-Based Measure
+        -Dot Product
+        -Cosine Similarity
+    -KL-distance
+    -Earth-movers distance
+
+- Feature Selection
+    -Dimensionality Curse
+    -Entropy
+    -Variance
+    -False positives and Misses
+
+- High-to-Low Dimensional Embedding/ Eigen decomposition
+    -Principal Components Analysis
+    -Singular Valued Decomposition and Latent Semantic Indexing
+
+- High-to-Low Dimensional Embedding/Generative models
+    - Probabilistic Latent Analysis
+    - Latent Dirichlet Allocation
+    - Expectation Maximization
+
+-Tensors and tensor decompositions
+    - CP Decomposition
+    - Tucker Decomposition
+
+- Distance-preserving Vector-Space Embedding of Objects
+
+    - Multi-Dimensional Scaling    
+
+    - Fastmap
+
+    - Auto-encoders
+
+- Sequence/time series representations
+
+        - Edit Distance
+
+	- Dynamic Time Warping
+
+	- SAX
+
+- Graph representation
+
+        - Vector space view of graphs
+
+	- Node ranking (hubs/authorities and PageRank)
+
+	- Node distance (PPR) 
+-Index structures
+       - 1D search (sorting, pruning, search trees)
+
+	- multi-dimensional to 1D mapping
+
+	- GridFiles 
+
+	- Page utilization and "dead spaces" 
+
+In addition to these, project-related content may also be included among the midterm exam questions.
+
+Best,
+
+KSC
+

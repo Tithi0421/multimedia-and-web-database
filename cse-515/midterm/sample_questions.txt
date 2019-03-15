@@ -1,0 +1,43 @@
+Sample questions (these are examples for question style, rather than exam content):
+
+- Why is an 'eclipse' more interesting than a 'sunset' and how does this concept of interestingness relates to the significance of a term in a database? Explain.
+
+	An eclipse occurs less frequently than a sunset and thus carries more information. By information theory, the item with less frequency carries more information than items with high frequency. A term in a database is similar in that a common term will have less descriptive power than an uncommon term. Where a common term will occur in large numbers in all documents, providing no ability to discriminate between documents, an uncommon term will discriminate well by its occurances (or lack there of) across documents.
+
+- Consider the string edit distance metric discussed in the class.  Suppose, you are provided with a large database of strings and the edit distances between all these strings. Considering that there is only one string, s3, included in two range query result sets, R1= <s1, Delta> and s2=<s2, Delta>, what can you say about the distance between strings s1 and s2? Explain.
+
+	The distance between string 1 and string 2 is between 0 and 2 * Delta. It is possible s1 and s2 are the same string, thus justifying their same distance to s3 and resulting in an edit distance between them. It is also possible the edits between them doesn't overlap at all, thus resulting in a distance of 2 delta. For instance, if s1 = '' and s2 = 'aaaa' the distance to s3 = 'aa' will be delta = 2 for both and 2 * 2 = 4 for s1 to s3.
+
+- Devise an algorithm to use keyword-to-document matrix (data) in calculating the keyword-to-keyword similarity. Explain.
+
+	In order to find a keyword to keyword similarity matrix, calculate the distance between each vector in the matrix. For each keyword, calculate the similarity by taking the sum of the differences in keyword value for each vector over the distance. The result of this is twofold. If the keywords are close, then the difference will be 0 resulting in no added value. If the keywords are far apart, then this will add a value proportional to the distance between the vectors. A far distance will result in little addition, where a close will result in a large addition. Thus we will have a measure where 0 is exactly similar, and everything above zero is increasingly less similar. Normalize the matrix and reverse the values to get increasing measures of similarity!
+
+- Explain why nearest-neighbor index structures are susceptible to a dimensionality curse.
+
+	As dimensionality of a vector increases, the proportion of the hypervolume within a distance D shrinks. This is because the volume grows at an exponentially larger rate as the distance increases. As a result, the variance in distance between points shrinks. If this trend is followed to an dimensionality of infinity, the proportion of the volume within a distance D and the variance in distance approaches 0, resulting in all points being equally far from each other and a thus nearest neighbor becoming meaningless.
+
+- State why principle component analysis (PCA) tries to find a transformation which minimizes the loss of variance in the data? Explain.
+
+	Variance preserves discriminatory power between data. Features with small variance provide little difference between data points, whereas features with large variance provide most of the distance between points. By maintaining the features which maximize variance the distinction between points is maximally maintained, resulting in dimensionality reduction that doesn't largely affect the distances between points.
+
+- State why SVD, which does not necessarily preserve variance, are commonly used in dimensionality reduction. Explain.
+
+	???
+
+- In class, we learned that multidimensional scaling (MDS) can be used for mapping a given set of data objects into a multi-dimensional space. We have also learned that FastMap approximates MDS with lower cost. State why MDS is not efficient in query processing? Explain.
+
+	MDS tries to minimize stress, which is calculated by the difference in the distance before and after mapping. This requires the distance between all nodes to be calculated, resulting in an N^2 computation. This is repeated iteratively adjusting points and adding dimensions as needed to reach a good approximation. This sort of computation is not necessary with FastMap, as it avoids comparing all nodes to one another to find the reduction.
+
+- How does FastMap achieve its efficiency? Explain.
+
+	FastMap identifies an axis of high variance in 3N computations and then maps points onto an orthagonal hyperplane in an O(N) level computation. It then repeats this without ever needing to calculate the distance between all nodes.
+
+- Consider the two ways a multidimensional space can be mapped onto a single dimension: dimensionality reduction (such as PCA) or space-filling curve. State pros and cons of these two approaches. Explain.
+
+	Space Filling Curve:
+		Good for search - allows you to easily find nearby items with a quick linear search.
+		Fast and simple.
+
+	Dimensionality Reduction
+		Good for retrieval? 
+		Intense 
